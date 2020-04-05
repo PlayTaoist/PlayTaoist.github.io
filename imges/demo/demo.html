@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UploadiFive Test</title>
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="jquery.uploadifive.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="uploadifive.css">
+    <style type="text/css">
+        body {
+            font: 13px Arial, Helvetica, Sans-serif;
+        }
+
+        .uploadifive-button {
+            float: left;
+            margin-right: 10px;
+        }
+        #queue{
+            width: 500px;
+            height: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>uploadify多文件H5上传</h1>
+    <form>
+        <div>
+    <input id="file_upload" name="file_upload" type="file" multiple="true" value="选择多个文件">
+    <a href="javascript:$('#file_upload').uploadifive('upload')">上传文件</a>
+        </div>
+        
+        <div id="queue"><span id="queue3"></span></>
+    </form>
+
+    <script type="text/javascript">
+            $(function () {
+                $('#file_upload').uploadifive({
+                    'auto': false,
+                    'buttonText': '选择多文件',
+                    'checkScript': 'check-exists.php',
+                    'queueID': 'queue3',
+                    'uploadScript': 'uploadifive.php',
+                    'onUploadComplete': function (file, data) { console.log(data); }
+                });
+            });
+    </script>
+</body>
+
+</html>
