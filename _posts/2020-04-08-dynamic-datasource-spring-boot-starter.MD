@@ -815,7 +815,7 @@ public class UserServiceImpl implements UserService {
 }
 ```
 
-
+项目地址：<https://github.com/PlayTaoist/dynamic-datasource-spring-boot-starter>
 
 具体内容请参考：<https://gitee.com/baomidou/dynamic-datasource-spring-boot-starter>
 
