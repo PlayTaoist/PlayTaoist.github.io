@@ -9,9 +9,13 @@ author: LIUREN
 
 > spring注解太多导致很多注解大家都没有用到，或者用到了需要查询这个注解的具体用法。现在记录一下。可以直接查询spring注解的用法。
 >
+> 原文出处：<https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247486635&idx=1&sn=9028d00727923f51240053666c9eb3a4&chksm=cea24360f9d5ca76e8afc7159c0dc463cf83adb798e68a39b2ba4f92f66971a60b70855384c4&token=1862674725&lang=zh_CN#rd>
+>
 > 版权声明：本文为原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 
-原文出处：<https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247486635&idx=1&sn=9028d00727923f51240053666c9eb3a4&chksm=cea24360f9d5ca76e8afc7159c0dc463cf83adb798e68a39b2ba4f92f66971a60b70855384c4&token=1862674725&lang=zh_CN#rd>
+
+
+
 
 ### 1. `@SpringBootApplication`
 
