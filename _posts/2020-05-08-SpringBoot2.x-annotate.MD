@@ -88,7 +88,7 @@ public @interface SpringBootConfiguration {
   }
   ```
 
-  #### 2.2. `Component`,`@Repository`,`@Service`, `@Controller`
+#### 2.2. `Component`,`@Repository`,`@Service`, `@Controller`
 
   我们一般使用 `@Autowired` 注解让 Spring 容器帮我们自动装配 bean。要想把类标识成可用于 `@Autowired` 注解自动装配的 bean 的类,可以采用以下注解实现：
 
@@ -97,7 +97,7 @@ public @interface SpringBootConfiguration {
   - `@Service` : 对应服务层，主要涉及一些复杂的逻辑，需要用到 Dao 层。
   - `@Controller` : 对应 Spring MVC 控制层，主要用户接受用户请求并调用 Service 层返回数据给前端页面。
 
-  #### 2.3. `@RestController`
+#### 2.3. `@RestController`
 
   `@RestController`注解是`@Controller和`@`ResponseBody`的合集,表示这是个控制器 bean,并且是将函数的返回值直 接填入 HTTP 响应体中,是 REST 风格的控制器。
 
@@ -109,7 +109,7 @@ public @interface SpringBootConfiguration {
 
   关于`@RestController` 和 `@Controller`的对比，请看这篇文章：[@RestController vs @Controller](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247485544&idx=1&sn=3cc95b88979e28fe3bfe539eb421c6d8&chksm=cea247a3f9d5ceb5e324ff4b8697adc3e828ecf71a3468445e70221cce768d1e722085359907&token=1725092312&lang=zh_CN&scene=21#wechat_redirect)。
 
-  #### 2.4. `@Scope`
+#### 2.4. `@Scope`
 
   声明 Spring Bean 的作用域，使用方法:
 
@@ -128,7 +128,7 @@ public @interface SpringBootConfiguration {
   - request : 每一次 HTTP 请求都会产生一个新的 bean，该 bean 仅在当前 HTTP request 内有效。
   - session : 每一次 HTTP 请求都会产生一个新的 bean，该 bean 仅在当前 HTTP session 内有效。
 
-  #### 2.5. `Configuration`
+#### 2.5. `Configuration`
 
   一般用来声明配置类，可以使用 `@Component`注解替代，不过使用`Configuration`注解声明配置类更加语义化。
 
@@ -143,7 +143,7 @@ public @interface SpringBootConfiguration {
   }
   ```
 
-  ### 3. 处理常见的 HTTP 请求类型
+### 3. 处理常见的 HTTP 请求类型
 
   **5 种常见的请求类型:**
 
@@ -153,7 +153,7 @@ public @interface SpringBootConfiguration {
   - **DELETE** ：从服务器删除特定的资源。举个例子：`DELETE /users/12`（删除编号为 12 的学生）
   - **PATCH** ：更新服务器上的资源（客户端提供更改的属性，可以看做作是部分更新），使用的比较少，这里就不举例子了。
 
-  #### 3.1. GET 请求
+#### 3.1. GET 请求
 
   ```java
   @GetMapping("users")` 等价于`@RequestMapping(value="/users",method=RequestMethod.GET)
@@ -163,7 +163,7 @@ public @interface SpringBootConfiguration {
   }
   ```
 
-  #### 3.2. POST 请求
+#### 3.2. POST 请求
 
   ```java
   @PostMapping("users")` 等价于`@RequestMapping(value="/users",method=RequestMethod.POST)
@@ -178,7 +178,7 @@ public @interface SpringBootConfiguration {
   }
   ```
 
-  #### 3.3. PUT 请求
+#### 3.3. PUT 请求
 
   ```java
   @PutMapping("/users/{userId}")` 等价于`@RequestMapping(value="/users/{userId}",method=RequestMethod.PUT)
@@ -189,7 +189,7 @@ public @interface SpringBootConfiguration {
   }
   ```
 
-  #### 3.4. **DELETE 请求**
+#### 3.4. **DELETE 请求**
 
   ```java
   @DeleteMapping("/users/{userId}")`等价于`@RequestMapping(value="/users/{userId}",method=RequestMethod.DELETE)
@@ -199,7 +199,7 @@ public @interface SpringBootConfiguration {
   }
   ```
 
-  #### 3.5. **PATCH 请求**
+#### 3.5. **PATCH 请求**
 
   一般实际项目中，我们都是 PUT 不够用了之后才用 PATCH 请求去更新数据。
 
@@ -211,11 +211,11 @@ public @interface SpringBootConfiguration {
       }
   ```
 
-  ### 4. 前后端传值
+### 4. 前后端传值
 
   **掌握前后端传值的正确姿势，是你开始 CRUD 的第一步！**
 
-  #### 4.1. `@PathVariable` 和 `@RequestParam`
+#### 4.1. `@PathVariable` 和 `@RequestParam`
 
   `@PathVariable`用于获取路径参数，`@RequestParam`用于获取查询参数。
 
@@ -234,7 +234,7 @@ public @interface SpringBootConfiguration {
 
   那么我们服务获取到的数据就是：`klassId=123456,type=web`。
 
-  #### 4.2. `@RequestBody`
+#### 4.2. `@RequestBody`
 
   用于读取 Request 请求（可能是 POST,PUT,DELETE,GET 请求）的 body 部分并且**Content-Type 为 application/json** 格式的数据，接收到数据之后会自动将数据绑定到 Java 对象上去。系统会使用`HttpMessageConverter`或者自定义的`HttpMessageConverter`将请求的 body 中的 json 字符串转换为 java 对象。
 
@@ -279,7 +279,7 @@ public @interface SpringBootConfiguration {
 
   👉 需要注意的是：**一个请求方法只可以有一个@RequestBody，但是可以有多个@RequestParam和@PathVariable**。 如果你的方法必须要用两个 `@RequestBody`来接受数据的话，大概率是你的数据库设计或者系统设计出问题了！
 
-  ### 5. 读取配置信息
+### 5. 读取配置信息
 
   **很多时候我们需要将一些常用的配置信息比如阿里云 oss、发送短信、微信认证的相关配置信息等等放到配置文件中。**
 
@@ -340,7 +340,7 @@ public @interface SpringBootConfiguration {
 
   你可以像使用普通的 Spring bean 一样，将其注入到类中使用。
 
-  #### 5.3. `PropertySource`（不常用）
+#### 5.3. `PropertySource`（不常用）
 
   `@PropertySource`读取指定 properties 文件
 
