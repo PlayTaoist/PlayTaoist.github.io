@@ -581,7 +581,7 @@ public class RedisGeoApplicationTests {
 }
 ```
 
-
+代码下载地址：https://gitee.com/VCS/springboot-redis-geo
 
 
 
