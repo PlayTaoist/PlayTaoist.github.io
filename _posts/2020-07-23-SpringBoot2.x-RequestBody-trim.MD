@@ -313,10 +313,10 @@ public class StringJsonUtils {
 
 ```shell
 11:28:07.995 [http-nio-80-exec-17] INFO  c.r.f.f.ParameterRequestWrapper - [getInputStream,54] - 去除POST请求数据两端的空格前参数：{
-	"idNumber": "412728198505132519",
+	"idNumber": "110101201003073036",
 	"password": " 123456 "
 }
-11:28:07.997 [http-nio-80-exec-17] INFO  c.r.f.f.ParameterRequestWrapper - [getInputStream,56] - 去除POST请求数据两端的空格后参数：{"password":"123456","idNumber":"412728198505132519"}
+11:28:07.997 [http-nio-80-exec-17] INFO  c.r.f.f.ParameterRequestWrapper - [getInputStream,56] - 去除POST请求数据两端的空格后参数：{"password":"123456","idNumber":"110101201003073036"}
 ```
 
 
