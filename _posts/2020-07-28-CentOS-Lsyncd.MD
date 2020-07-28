@@ -1,8 +1,8 @@
 ---
-title:  "使用SpringBoot使用过滤器去除@RequestBody参数两端的空格"
-categories: SpringBoot RequestBody
-tags: SpringBoot RequestBody
-author: LIURENL
+title:  "CentOS 中文件夹同步 采用Lsyncd对文件夹进行同步"
+categories: CentOS Lsyncd
+tags: CentOS Lsyncd
+author: LIUREN
 ---
 
 # CentOS 中文件夹同步 采用Lsyncd对文件夹进行同步
