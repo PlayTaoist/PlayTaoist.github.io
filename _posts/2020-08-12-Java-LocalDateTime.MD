@@ -1,7 +1,7 @@
 ---
-title:  "CentOS7.6 更新DNS，并和互联网同步时间"
-categories: CentOS DNS
-tags: CentOS DNS
+title:  "LocalDateTime的JDK1.8的新特新"
+categories: LocalDateTime
+tags: LocalDateTime
 author: LIUREN
 ---
 
