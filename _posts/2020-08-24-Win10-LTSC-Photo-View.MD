@@ -1,7 +1,7 @@
 ---
-title:  "LocalDateTime的JDK1.8的新特新"
-categories: LocalDateTime
-tags: LocalDateTime
+title:  "恢复win10 LTSC 2019 图片查看器功能"
+categories: win10
+tags: win10
 author: LIUREN
 ---
 
