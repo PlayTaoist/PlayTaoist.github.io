@@ -24,7 +24,7 @@ MongoDB官网安装教程：https://docs.mongodb.com/manual/tutorial/install-mon
 
 MongoDB 4.4.4 版本下载地址
 
-![](https://www.codepeople.cn/imges/00x81.png)
+![](https://www.codepeople.cn/imges/00x82.png)
 
 
 
