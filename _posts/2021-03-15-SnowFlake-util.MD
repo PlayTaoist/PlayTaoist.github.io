@@ -61,7 +61,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @ClassName: SnowIdUtils
- * @Description: 雪花算法
+ * @Description: 雪花算法(改造简化后的算法生成字符串为15位,原生算法是19位,主要区别是原生MACHINE_BIT被拆成了dataworkId(5位)+ workId(5位))
  * @DateTime 2021-3-15 16:30:17
  */
 public class SnowIdUtils {
