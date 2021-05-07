@@ -59,7 +59,14 @@ public class ParamsFilterConfig {
 ParamsFilter.java
 
 ```java
-package com.codepeople.framework.filter;
+package com.kelan.framework.filter;
+
+/**
+ * @ClassName: ParamsFilter
+ * @Description: 
+ * @Author 刘 仁
+ * @DateTime 2021-4-9 10:49:46 
+ */
 
 import java.io.IOException;
 
@@ -73,10 +80,12 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
 @WebFilter(urlPatterns = "/**", filterName = "ParamsFilter", dispatcherTypes = DispatcherType.REQUEST)
+@Order(value = 1)
 public class ParamsFilter implements Filter {
 
 	@Override
@@ -317,6 +326,16 @@ public class StringJsonUtils {
 	"password": " 123456 "
 }
 11:28:07.997 [http-nio-80-exec-17] INFO  c.r.f.f.ParameterRequestWrapper - [getInputStream,56] - 去除POST请求数据两端的空格后参数：{"password":"123456","idNumber":"110101201003073036"}
+```
+
+
+
+如果Filter未生效则可以直接在Springboot启动类上增加如下注解
+
+```java
+@ServletComponentScan(basePackages = "full.package.path")
+##例如
+@ServletComponentScan(basePackages = "com.kelan.framework.filter")
 ```
 
 
