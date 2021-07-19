@@ -11,15 +11,13 @@ type: page
 
 ## 关于我
 
-<iframe src="https://githubbadge.appspot.com/gaohaoyang?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
-
 就职于海南科澜科技有限公司，后端开发。
 
 主要兴趣集中在后端开发，Python、Java、Go后端开发深入我心。将更多的业务逻辑放在后端中，这很有趣。同时，将自己构想的内容实现出来，这种感觉很愉快。
 
 热爱美好的事物，爬过山、过过河、割过麦子、拉过板车、追过兔子、撵过鸡生活老丰富了。
 
-很喜欢崔健的歌词：现实像块石头，精神像个蛋，石头虽然坚硬，可蛋里才是生命。
+喜欢的歌词：我和我的祖国一刻也不能分割。
 
 还有，学习是一个非常愉快的过程。共同加油！
 
