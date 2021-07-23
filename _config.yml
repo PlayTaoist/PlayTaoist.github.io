@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+﻿# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -33,8 +33,8 @@ description_footer: 本站记录我前端之旅的沿途风景！
 
 valine_comment:
     enable: true
-    leancloud_appid: TyycwmVygccDruMiF6w0XwNb-gzGzoHsz
-    leancloud_appkey: 63tegakam3VgktVHeLjcr5RG
+    leancloud_appid: RwBVo3gDwFyCnh7CX6SBvtSp-gzGzoHsz
+    leancloud_appkey: 0CxG8ukSTeGX0GGNsohtKtRO
     placeholder: "Just go go"
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
