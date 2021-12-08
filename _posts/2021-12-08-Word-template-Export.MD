@@ -643,9 +643,9 @@ public class TableStyle {
 
 
 
-最后附上我的Word模板，供大家下载：
+最后附上我的Word模板，供大家下载：https://www.codepeople.cn/imges/month_report_template.docx
 
-![Word模板](https://www.codepeople.cn/imges/month_report_template.docx)
+
 
 这就完成了，然后调用下接口，就能生成Word了。还带附件哦。
 
