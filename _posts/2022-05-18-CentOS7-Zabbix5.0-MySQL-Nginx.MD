@@ -139,6 +139,16 @@ DBUser=zabbix
 DBPassword=password
 #端口
 DBPort=3306
+#默认是ServerActive=127.0.0.1 增加一个监控IP
+StatsAllowedIP=127.0.0.1,192.168.0.180
+```
+
+**修改zabbix_agend.conf的配置文件**
+
+```shell
+vim /etc/zabbix/zabbix_agentd.conf
+#主动监控的IP默认是ServerActive=127.0.0.1 192.168.180是自行添加的自己机器的IP
+ServerActive=127.0.0.1,192.168.0.180
 ```
 
 **修改nginx配置文件**
