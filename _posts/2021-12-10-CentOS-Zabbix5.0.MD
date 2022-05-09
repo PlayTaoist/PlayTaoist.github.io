@@ -86,7 +86,7 @@ enabled=1
 
 **安装Zabbix和mysql连接工具已经nginx配置文件**
 
-```shel
+```shell
 yum install zabbix-web-mysql-scl zabbix-nginx-conf-scl
 ```
 
