@@ -208,7 +208,7 @@ date.timezone = Asia/Shanghai
 systemctl restart zabbix-server zabbix-agent rh-nginx116-nginx rh-php72-php-fpm
 ```
 
-```shel
+```shell
 systemctl enable zabbix-server zabbix-agent rh-nginx116-nginx rh-php72-php-fpm
 ```
 
