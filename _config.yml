@@ -40,7 +40,7 @@ valine_comment:
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-baidu_tongji_id: 2babbcd87a0b5f62e17d2419049f994d
+baidu_tongji_id: 615a7de4c851ccc25da60863f0a4225b
 google_analytics_id: 3454436772 # google 分析追踪id
 
 # Build settings
