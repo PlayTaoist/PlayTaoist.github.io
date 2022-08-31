@@ -1,5 +1,5 @@
 ---
-title:  "CentOS7安装Ansible"
+title:  "OpenCV - 滑动拼图验证码自动识别与匹配"
 categories:  Ansible CentOS7
 tags: Ansible CentOS7
 author: LIUREN
@@ -17,25 +17,25 @@ author: LIUREN
 
 [TOC]
 
-![img](https:////upload-images.jianshu.io/upload_images/3424642-17a3199c16aafc50.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![](https://www.codepeople.cn/imges/00x142.png)
 
 ### 在线体验
 
 体验地址：[https://www.fengkongcloud.com/trial/captcha.html](https://links.jianshu.com/go?to=https%3A%2F%2Fwww.fengkongcloud.com%2Ftrial%2Fcaptcha.html)
 
-![img](https:////upload-images.jianshu.io/upload_images/3424642-7c356cb943d02710.png?imageMogr2/auto-orient/strip|imageView2/2/w/1008/format/webp)
+![](https://www.codepeople.cn/imges/00x143.png)
 
 ### 技术分析
 
 **1、抓包获取前景图和背景图**
 
-![img](https:////upload-images.jianshu.io/upload_images/3424642-c92c2824dfc1e90d.png?imageMogr2/auto-orient/strip|imageView2/2/w/90/format/webp)
+![](https://www.codepeople.cn/imges/00x144.png)
 
 前景
 
 
 
-![img](https:////upload-images.jianshu.io/upload_images/3424642-3e0205217dde592c.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/600/format/webp)
+![](https://www.codepeople.cn/imges/00x145.png)
 
 背景
 
@@ -43,25 +43,25 @@ author: LIUREN
 
 计算方法：[Python 图像处理：计算 PNG 非透明区域最小外接矩形](https://www.jianshu.com/p/a88aac0fccb9)
 
-![img](https:////upload-images.jianshu.io/upload_images/3424642-4fc8dd83fcc02abe.png?imageMogr2/auto-orient/strip|imageView2/2/w/389/format/webp)
+![](https://www.codepeople.cn/imges/00x146.png)
 
 **3、裁切前景图和背景图**
 
 背景图中两个相似块，以前景图的非透明边界去横切背景图，能排除干扰项
 
-![img](https:////upload-images.jianshu.io/upload_images/3424642-ddf1474103e8cfa0.png?imageMogr2/auto-orient/strip|imageView2/2/w/970/format/webp)
+![](https://www.codepeople.cn/imges/00x147.png)
 
 **4、高斯滤波与边缘检测**
 
 为了提升图像匹配的准确性，使用高斯滤波与边缘检测算法，对图像预处理
 
-![img](https:////upload-images.jianshu.io/upload_images/3424642-c590151c7ac3c31d.png?imageMogr2/auto-orient/strip|imageView2/2/w/932/format/webp)
+![](https://www.codepeople.cn/imges/00x148.png)
 
 **5、模板匹配**
 
 使用 OpenCV 的 `matchTemplate` 匹配相似位置
 
-![img](https:////upload-images.jianshu.io/upload_images/3424642-236e3404df084a60.png?imageMogr2/auto-orient/strip|imageView2/2/w/933/format/webp)
+![](https://www.codepeople.cn/imges/00x149.png)
 
 ### 实现源码
 
